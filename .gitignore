@@ -1,0 +1,11 @@
+# Fightcade / FBNeo runtime files
+*.fs
+*.fr
+config/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
