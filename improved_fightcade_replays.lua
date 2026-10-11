@@ -129,7 +129,7 @@ do
     if not hasFn(r[1], r[3]) then missing[#missing + 1] = r[2] .. "." .. r[3] end
   end
   if #missing > 0 then
-    error("fightcade_replay_controller: this emulator lacks " .. table.concat(missing, ", "))
+    error("improved_fightcade_replays: this emulator lacks " .. table.concat(missing, ", "))
   end
 end
 

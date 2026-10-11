@@ -1,9 +1,9 @@
 -- SPDX-License-Identifier: GPL-3.0-or-later
 -- Copyright (C) 2026 fightcade-replay-controller contributors
--- Test harness for fightcade_replay_controller.lua
+-- Test harness for improved_fightcade_replays.lua
 --
 -- Usage (needs a Lua 5.1 interpreter, the version FightcadeFBNeo embeds):
---   lua5.1 tests/mock_fightcade.lua [path/to/fightcade_replay_controller.lua]
+--   lua5.1 tests/mock_fightcade.lua [path/to/improved_fightcade_replays.lua]
 -- Exit code 0 = all checks passed. Env STREAM_LEN sets the replay length.
 --
 -- Mock of the FightcadeFBNeo run loop, faithful to src/burner/win32/run.cpp:
@@ -11,7 +11,7 @@
 --  RunFrame(kNetGame): NetworkGetInput (fail => return), Lua before hook,
 --    FBA_LuaReadJoypad override, emulate, draw (gui.register), FrameBoundary.
 -- The "game" is a deterministic RAM model read through memory.readdword.
-local SCRIPT = arg[1] or "fightcade_replay_controller.lua"
+local SCRIPT = arg[1] or "improved_fightcade_replays.lua"
 local SCEN = arg[2] or "all"
 local MOD = 4294967296
 

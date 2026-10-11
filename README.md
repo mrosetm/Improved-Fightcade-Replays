@@ -22,14 +22,14 @@ Hold `R` to go back in the match, release it, and the replay continues from that
 
 ## Installation
 
-1. Download [`fightcade_replay_controller.lua`](fightcade_replay_controller.lua).
+1. Download [`improved_fightcade_replays.lua`](improved_fightcade_replays.lua).
 2. Put it in your Fightcade folder under `Fightcade\emulator\fbneo\` (next to `fcadefbneo.exe`). Any folder works; this is just where the file browser opens.
 
 ## Usage
 
 1. Start a 3rd Strike replay from the Fightcade lobby.
 2. As soon as the picture appears, open **Game › Lua Scripting... › New Lua Script Window...** (or press `Alt+L`).
-3. Click **Browse...**, pick `fightcade_replay_controller.lua`, then click **Run**.
+3. Click **Browse...**, pick `improved_fightcade_replays.lua`, then click **Run**.
 
 You can only rewind back to the moment the script started, so start it early in the replay.
 
@@ -105,7 +105,7 @@ This script:
 It needs a Lua 5.1 interpreter (the version FightcadeFBNeo embeds):
 
 ```sh
-lua5.1 tests/mock_fightcade.lua fightcade_replay_controller.lua
+lua5.1 tests/mock_fightcade.lua improved_fightcade_replays.lua
 ```
 
 Exit code `0` means every check passed. `STREAM_LEN=<frames>` changes the simulated replay length (default 50,000).
